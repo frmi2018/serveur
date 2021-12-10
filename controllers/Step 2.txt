@@ -1,0 +1,7 @@
+Devenir instructeur
+
+connection à stripe
+recevoir le paiement
+distribuer le paiement
+70% vendeur et 30% taxes plateform de formation
+recevoir le paiement sur son compte

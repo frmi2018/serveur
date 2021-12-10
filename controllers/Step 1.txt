@@ -1,0 +1,13 @@
+How password reset works ?
+
+utilisateur entre son email
+chercher l'utilisateur dans la bdd grâce à l'email
+si trouvé alors créer un code reset
+sauvegarder ce code reset dans la bdd
+envoyer un email à l'utilisateur avec le code
+l'utilisateur récupère le code dans son email
+l'utilisateur renseigne dans le formulaire le code et le nouveau password
+le serveur reçoit le code et le nouveau password
+chercher l'utilisateur dans la bdd grâce à l'email
+vérifier le code
+si correct mise à jour du password et effacer le code reset de la bdd
