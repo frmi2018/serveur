@@ -5,7 +5,7 @@ const router = express.Router();
 // controllers
 import { comics, characters } from "../controllers/marvel";
 
-router.post("/comics", comics);
-router.post("/characters", characters);
+router.get("/comics", comics);
+router.get("/characters", characters);
 
 module.exports = router;
