@@ -12,7 +12,7 @@ export const comics = async (req, res) => {
     if (characterId) {
       await axios
         .get(
-          `https://lereacteur-marvel-api.herokuapp.com/comics/${characterId}?apiKey=${process.env.API_KEY}`
+          `https://lereacteur-marvel-api.herokuapp.com/comics/${characterId}?apiKey=${process.env.API_KEY_MARVEL}`
         )
         .then((response) => {
           const data = response.data;
@@ -25,7 +25,7 @@ export const comics = async (req, res) => {
       // liste de tous les comics
       await axios
         .get(
-          `https://lereacteur-marvel-api.herokuapp.com/comics?title=${title}&skip=${skip}&apiKey=${process.env.API_KEY}`
+          `https://lereacteur-marvel-api.herokuapp.com/comics?title=${title}&skip=${skip}&apiKey=${process.env.API_KEY_MARVEL}`
         )
         .then((response) => {
           const data = response.data;
@@ -49,7 +49,7 @@ export const characters = async (req, res) => {
   try {
     await axios
       .get(
-        `https://lereacteur-marvel-api.herokuapp.com/characters?skip=${skip}&name=${name}&apiKey=${process.env.API_KEY}`
+        `https://lereacteur-marvel-api.herokuapp.com/characters?skip=${skip}&name=${name}&apiKey=${process.env.API_KEY_MARVEL}`
       )
       .then((response) => {
         const data = response.data;

@@ -14,7 +14,7 @@ const app = express();
 
 // db
 mongoose
-  .connect(process.env.DATABASE, {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
@@ -48,5 +48,5 @@ app.all("*", (req, res) => {
 });
 
 // port
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 4000;
 app.listen(port, () => console.log(`Server is running on port ${port}`));
